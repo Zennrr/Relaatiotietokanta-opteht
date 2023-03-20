@@ -1,0 +1,7 @@
+FROM library/mysql:8
+ENV MYSQL_ROOT_PASSWORD=secret
+ENV MYSQL_DATABASE=rtk
+ENV MYSQL_USER=rtk
+ENV MYSQL_PASSWORD=rtk
+ENV LANG=C.UTF-8
+COPY relaatiotietokanta.sql /docker-entrypoint-initdb.d/
